@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid skyblue;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: skyblue;
+}
+</style>
+</head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link href="../css/stylesheet.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function myFunction() {
+    var x = document.getElementById("mynavdiv");
+    if (x.className === "navdiv") {
+        x.className += " responsive";
+    } else {
+        x.className = "navdiv";
+    }
+}
+</script>
+<link rel="stylesheet" href="../css/nav.css">
+<body>
+<div class="w3-bar w3-light-grey w3-border">
+    <a href="index.html" class="w3-bar-item w3-button w3-mobile"><img src="../graphics/logo.png" height=80 width=100></a>
+    <a href="./About.html" class="w3-bar-item w3-button w3-mobile">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-mobile">Equipment</a>
+    <a href="#" class="w3-bar-item w3-button w3-mobile">Trials</a>
+     <a href="./login.html" class="w3-bar-item w3-button w3-mobile">Staff Login</a>
+    <input type="text" class="w3-bar-item w3-input w3-white w3-mobile" placeholder="Search..">
+    <button class="w3-bar-item w3-button w3-green w3-mobile">Go</button>
+  </div>
+  <center><font size="+6">Beginners</font></center>
+  <center>trial for you this week</center>
+  <center><font color=red size="+3">Lamma Island hiking trial</font></center>
+  <table>
+  <tr>
+	  <th><font color=black>Routes</font></th>
+      <th><font color=black>From lamma island to Sok Kwu Wan</font></th>
+  </tr>
+  <tr>
+    <td><font color=black>Length</font></td>
+	  <td><font color=black>7km</fomt></td>
+  </tr>
+  <tr>
+    <td><font color=black>time to complete</font></td>
+	  <td><font color=black>Around 2 hours</font></td>
+  </tr>
+  <tr>
+    <td><font color=black>How to get to the starting porint? </font></td>
+    <td><font color=black>take ferry from Cenral</font></td>
+  </tr>
+</table>
+ <center>Map of Lamma Island</center>
+ <br>
+ <center><iframe width="740" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.hk/maps/ms?ie=UTF8&amp;hl=zh-TW&amp;brcurrent=3,0x34015525e747cd15:0x46a8f8c41a0ec182,0,0x34015525e747cd15:0xf9bbe811afd9d3dd&amp;msa=0&amp;msid=209279595503137058391.0004a30d62918157bdaab&amp;ll=22.214378,114.120608&amp;spn=0.025194,0.022547&amp;t=p&amp;output=embed"></iframe></center>
+  
+  <div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeLarger()">Larger</button>
+  <button onclick="makeSmaller()">Smaller</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+	  <font size ="+2" color=skyblue>Video from Lamma Island</font>
+  <video id="video1" width="420" height"400">
+    <source src="../video/pav-64D01F9B-195C-45D5-AF94-9938BF231B03.mp4" type="video/mp4">
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+    if (myVideo.paused) 
+        myVideo.play(); 
+    else 
+        myVideo.pause(); 
+} 
+
+function makeLarger() { 
+    myVideo.width = 600; 
+} 
+
+function makeSmaller() { 
+    myVideo.width = 240; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+
+
+</body>
+</html>

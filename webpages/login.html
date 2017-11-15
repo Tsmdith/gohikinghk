@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<style>
+form {
+    border: 3px solid #white;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12.5px 20.5px;
+    margin: 8.5px 0;
+    display: inline-block;
+    border: 1px solid #white;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgba(5,83,228,1.00);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.resetbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #FF3333;
+}
+
+.login {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.login {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .resetbtn {
+       width: 100%;
+    }
+}
+</style>
+<body oncontextmenu="return false">
+
+<h2>Staff Login</h2>
+<script type="text/javascript">
+ var RecaptchaOptions = {
+    theme : 'theme_name'
+ };
+ </script>
+<form name="login">
+<center><img src="../graphics/WelcomeCircle.png" alt="Avatar" class="avatar" style="width:120px;height:120px;"></center>
+    <br><label><b>Username</b></label>
+    
+    <input type="text" placeholder="username" name="uname">
+    
+    <label><b>Password</b></label>
+    <input type="password" placeholder="password" name="pswrd">
+    
+    <input type="button" onclick="check(this.form)"value="Login"/> 
+  </p>
+  <div class="container" style="background-color:#white">
+    <input type="Reset" class="resetbtn">
+    
+    <span class="psw"><a href="./forgotpw.html">Forgot password?</a></span>
+  </div>
+</form>
+    
+<script language="javascript">
+function check(form)
+{
+	if (form.uname.value == "iamstaff" && form.pswrd.value == "staff2017") 
+	    {
+		window.open("./staffmemo.html")
+	}
+
+   else 
+	   {
+	 alert("Error Username or Password")
+	   }
+		}
+</script>
+    <input type="checkbox" checked="checked"> Remember me
+    
+    <form id="Captcha" name="Captcha">
+<table> 
+  <tr>
+    <td align="justify">
+      <label for="captcha">Captcha</label>
+    </td>
+    <td>
+      <input id="captchatxt" type="captchatext" name="txt" value="" maxlength="15" size="28" />
+    </td>
+    <td> 
+      <img id="imgCaptcha" src="../graphics/captcha.jpeg" />
+    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>
+      <input id="Captchatest" type="button" value="Captcha Test" name="Captchatest" 
+          onclick="getParam(document.Captcha)" />
+    </td>
+  </tr>
+</table> 
+
+<div id="result">&nbsp;</div>
+</form>
+    
+
+</body>
+</html>
+

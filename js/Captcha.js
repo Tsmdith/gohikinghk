@@ -1,0 +1,1 @@
+<script language="JavaScript" type="text/javascript" src="ajax_captcha.js"></script>// JavaScript Document

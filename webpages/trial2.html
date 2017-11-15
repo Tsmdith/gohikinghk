@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid skyblue;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: skyblue;
+}
+</style>
+</head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link href="../css/stylesheet.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function myFunction() {
+    var x = document.getElementById("mynavdiv");
+    if (x.className === "navdiv") {
+        x.className += " responsive";
+    } else {
+        x.className = "navdiv";
+    }
+}
+</script>
+<link rel="stylesheet" href="../css/nav.css">
+<body>
+<div class="w3-bar w3-light-grey w3-border">
+    <a href="index.html" class="w3-bar-item w3-button w3-mobile"><img src="../graphics/logo.png" height=80 width=100></a>
+    <a href="./About.html" class="w3-bar-item w3-button w3-mobile">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-mobile">Equipment</a>
+    <a href="#" class="w3-bar-item w3-button w3-mobile">Trials</a>
+     <a href="./login.html" class="w3-bar-item w3-button w3-mobile">Staff Login</a>
+    <input type="text" class="w3-bar-item w3-input w3-white w3-mobile" placeholder="Search..">
+    <button class="w3-bar-item w3-button w3-green w3-mobile">Go</button>
+  </div>
+  <center><font size="+6">Mid-Level</font></center>
+  <center>trial for you this week</center>
+  <center><font color=red size="+3">Dragon Hill Back</font></center>
+  <table>
+  <tr>
+	  <th><font color=black>Routes</font></th>
+      <th><font color=black>From To Tei Wan to Big Wave Bay</font></th>
+  </tr>
+  <tr>
+    <td><font color=black>Length</font></td>
+	  <td><font color=black>8.5km</fomt></td>
+  </tr>
+  <tr>
+    <td><font color=black>time to complete</font></td>
+	  <td><font color=black>Around 3 hours</font></td>
+  </tr>
+  <tr>
+    <td><font color=black>How to get to the starting porint? </font></td>
+    <td><font color=black>take Bus no.9 from Shau Kei Wan</font></td>
+  </tr>
+</table>
+ <center>Map of Dragon Hill Back</center>
+ <br>
+ <center><iframe width="740" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.hk/maps/ms?ie=UTF8&amp;hl=zh-TW&amp;brcurrent=3,0x34040200fd5c4d4d:0x19082e5545f21dca,0,0x3403fff26e29e2b1:0xc0eea9afd6463013&amp;t=p&amp;msa=0&amp;msid=209279595503137058391.0004a31395cebdfdf28a6&amp;ll=22.241914,114.242105&amp;spn=0.039722,0.063429&amp;z=14&amp;output=embed"></iframe></center>
+ 
+ <div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeLarger()">Larger</button>
+  <button onclick="makeSmaller()">Smaller</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+	  <font size ="+2" color=skyblue>Video from Dragon Hill</font>
+  <video id="video2" width="420" height"400">
+    <source src="../video/ipv-21226AB4-ABBB-417A-AF7D-12780CA1A091.mp4" type="video/mp4">
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video2"); 
+
+function playPause() { 
+    if (myVideo.paused) 
+        myVideo.play(); 
+    else 
+        myVideo.pause(); 
+} 
+
+function makeLarger() { 
+    myVideo.width = 600; 
+} 
+
+function makeSmaller() { 
+    myVideo.width = 240; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+
+
+  
+</body>
+</html>

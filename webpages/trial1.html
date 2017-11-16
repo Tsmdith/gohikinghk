@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>trial 1</title>
 <style>
 table {
     font-family: arial, sans-serif;
@@ -36,14 +36,27 @@ function myFunction() {
 <link rel="stylesheet" href="../css/nav.css">
 <body>
 <div class="w3-bar w3-light-grey w3-border">
-    <a href="index.html" class="w3-bar-item w3-button w3-mobile"><img src="../graphics/logo.png" height=80 width=100></a>
+    <a href="./home.html" class="w3-bar-item w3-button w3-mobile"><img src="../graphics/logo.png" height=80 width=100></a>
     <a href="./About.html" class="w3-bar-item w3-button w3-mobile">About</a>
-    <a href="#" class="w3-bar-item w3-button w3-mobile">Equipment</a>
-    <a href="#" class="w3-bar-item w3-button w3-mobile">Trials</a>
+    <a href="./equip.html" class="w3-bar-item w3-button w3-mobile">Equipment</a>
+    
+     <div class="w3-dropdown-click">
+      <button class="w3-button" onclick="myFunction()">
+        Trials <i class="fa fa-caret-down"></i>
+      </button>
+      
+      <div id="dropdown" class="w3-dropdown-content w3-bar-block w3-card">
+        <a href="./trial1.html" class="w3-bar-item w3-button">Beginners</a>
+        <a href="./trial2.html" class="w3-bar-item w3-button">Mid-Level</a>
+        <a href="./trial3.html" class="w3-bar-item w3-button">Challengers</a>
+		 </div>
+		</div>
+    
      <a href="./login.html" class="w3-bar-item w3-button w3-mobile">Staff Login</a>
     <input type="text" class="w3-bar-item w3-input w3-white w3-mobile" placeholder="Search..">
     <button class="w3-bar-item w3-button w3-green w3-mobile">Go</button>
   </div>
+  
   <center><font size="+6">Beginners</font></center>
   <center>trial for you this week</center>
   <center><font color=red size="+3">Lamma Island hiking trial</font></center>
@@ -102,7 +115,16 @@ function makeSmaller() {
 function makeNormal() { 
     myVideo.width = 420; 
 } 
-</script> 
+
+function myFunction() {
+    var x = document.getElementById("dropdown");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
 
 
 </body>
